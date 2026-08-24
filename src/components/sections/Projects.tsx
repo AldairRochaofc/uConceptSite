@@ -48,19 +48,23 @@ export function Projects() {
   );
 
   return (
-    <section id="proyectos" ref={sectionRef} className="relative overflow-hidden bg-[#141414] py-24">
-      <div className="section-padding pb-0">
+    <section
+      id="proyectos"
+      ref={sectionRef}
+      className="relative flex h-screen flex-col justify-center overflow-hidden bg-[#141414] px-6 py-10 md:px-10"
+    >
+      <div>
         <p className="text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Portfolio</p>
         <h2 className="mt-4 font-[family-name:var(--font-bebas)] text-4xl text-white md:text-6xl">
           PROJETOS QUE FALAM POR SI SÓ
         </h2>
       </div>
 
-      <div ref={trackRef} className="mt-12 flex gap-6 px-6 md:px-10">
+      <div ref={trackRef} className="mt-10 flex gap-6">
         {projects.map((p) => (
           <article
             key={p.title}
-            className="project-card group relative h-[420px] w-[320px] shrink-0 overflow-hidden rounded-3xl md:w-[380px]"
+            className="project-card group relative h-[clamp(240px,50vh,420px)] w-[280px] shrink-0 overflow-hidden rounded-3xl md:w-[380px]"
             data-cursor
           >
             <div className={`absolute inset-0 bg-gradient-to-br ${p.gradient}`} />
