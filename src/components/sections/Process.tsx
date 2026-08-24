@@ -41,15 +41,15 @@ export function Process() {
   );
 
   return (
-    <section id="proceso" ref={sectionRef} className="section-padding relative bg-[#0A1023]">
+    <section id="proceso" ref={sectionRef} className="section-padding relative bg-[#141414]">
       <div className="mx-auto max-w-4xl">
-        <p className="text-center text-sm tracking-[0.3em] text-[#2D7DFF] uppercase">Proceso</p>
+        <p className="text-center text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Proceso</p>
         <h2 className="mt-4 text-center font-[family-name:var(--font-bebas)] text-4xl text-white md:text-6xl">
           CÓMO TRABAJAMOS
         </h2>
 
         <div className="relative mt-20">
-          <div className="process-line absolute top-0 left-[27px] h-full w-[2px] bg-gradient-to-b from-[#0057FF] via-[#2D7DFF] to-transparent md:left-1/2 md:-translate-x-px" />
+          <div className="process-line absolute top-0 left-[27px] h-full w-[2px] bg-gradient-to-b from-[#D4AF37] via-[#F2C94C] to-transparent md:left-1/2 md:-translate-x-px" />
 
           {steps.map((step, i) => (
             <div
@@ -58,12 +58,12 @@ export function Process() {
                 i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
               }`}
             >
-              <div className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[#2D7DFF]/50 bg-[#050816] font-[family-name:var(--font-bebas)] text-xl text-[#2D7DFF] shadow-[0_0_30px_rgba(0,87,255,0.3)]">
+              <div className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[#F2C94C]/50 bg-[#0A0A0A] font-[family-name:var(--font-bebas)] text-xl text-[#F2C94C] shadow-[0_0_30px_rgba(212,175,55,0.3)]">
                 {step.num}
               </div>
               <div className={`glass flex-1 rounded-2xl p-6 md:max-w-md ${i % 2 === 0 ? "md:mr-auto" : "md:ml-auto"}`}>
                 <h3 className="text-xl font-semibold text-white">{step.title}</h3>
-                <p className="mt-2 text-[#AAB3C5]">{step.desc}</p>
+                <p className="mt-2 text-[#A8A29E]">{step.desc}</p>
               </div>
             </div>
           ))}

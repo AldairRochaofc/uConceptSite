@@ -61,13 +61,13 @@ export function Services() {
   );
 
   return (
-    <section id="servicios" ref={sectionRef} className="section-padding relative bg-[#0A1023]">
+    <section id="servicios" ref={sectionRef} className="section-padding relative bg-[#141414]">
       <div className="mx-auto max-w-7xl">
-        <p className="text-sm tracking-[0.3em] text-[#2D7DFF] uppercase">Servicios</p>
+        <p className="text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Servicios</p>
         <h2 className="mt-4 font-[family-name:var(--font-bebas)] text-4xl text-white md:text-6xl">
           TODO LO QUE TU MARCA NECESITA
         </h2>
-        <p className="mt-4 max-w-xl text-[#AAB3C5]">
+        <p className="mt-4 max-w-xl text-[#A8A29E]">
           Soluciones integrales diseñadas para negocios ambiciosos en España.
         </p>
 
@@ -75,15 +75,15 @@ export function Services() {
           {services.map((s) => (
             <article
               key={s.title}
-              className="service-card glass group relative overflow-hidden rounded-2xl p-8 transition-all duration-500 hover:-translate-y-2 hover:border-[#2D7DFF]/60 hover:shadow-[0_0_50px_rgba(0,87,255,0.2)]"
+              className="service-card glass group relative overflow-hidden rounded-2xl p-8 transition-all duration-500 hover:-translate-y-2 hover:border-[#F2C94C]/60 hover:shadow-[0_0_50px_rgba(212,175,55,0.2)]"
               data-cursor
             >
-              <span className="text-4xl text-[#2D7DFF] transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_20px_#2D7DFF]">
+              <span className="text-4xl text-[#F2C94C] transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_20px_#F2C94C]">
                 {s.icon}
               </span>
               <h3 className="mt-6 text-xl font-semibold text-white">{s.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-[#AAB3C5]">{s.desc}</p>
-              <div className="absolute -right-8 -bottom-8 h-32 w-32 rounded-full bg-[#0057FF]/10 blur-2xl transition-all group-hover:bg-[#0057FF]/25" />
+              <p className="mt-3 text-sm leading-relaxed text-[#A8A29E]">{s.desc}</p>
+              <div className="absolute -right-8 -bottom-8 h-32 w-32 rounded-full bg-[#D4AF37]/10 blur-2xl transition-all group-hover:bg-[#D4AF37]/25" />
             </article>
           ))}
         </div>

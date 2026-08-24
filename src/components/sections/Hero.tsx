@@ -49,22 +49,22 @@ export function Hero() {
       ref={containerRef}
       className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-28 pb-20"
     >
-      <div className="hero-glow pointer-events-none absolute top-1/4 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-[#0057FF]/20 blur-[120px] opacity-40" />
+      <div className="hero-glow pointer-events-none absolute top-1/4 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-[#D4AF37]/20 blur-[120px] opacity-40" />
 
       <div className="relative z-10 mx-auto max-w-6xl text-center">
-        <p className="hero-logo mb-6 inline-flex items-center gap-2 rounded-full border border-[#2D7DFF]/30 bg-white/5 px-5 py-2 text-xs tracking-[0.25em] text-[#2D7DFF] uppercase backdrop-blur-md">
-          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#2D7DFF]" />
-          Soluciones Digitales Premium
+        <p className="hero-logo mb-6 inline-flex items-center gap-2 rounded-full border border-[#F2C94C]/30 bg-white/5 px-5 py-2 text-xs tracking-[0.25em] text-[#F2C94C] uppercase backdrop-blur-md">
+          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#F2C94C]" />
+          Marketing Digital Premium
         </p>
 
         <h1 className="hero-headline font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,8vw,5.5rem)] leading-[0.95] tracking-wide text-white">
-          <span className="line block glow-text">SOLUCIONES DIGITALES</span>
-          <span className="line block bg-gradient-to-r from-white via-[#F5F7FA] to-[#2D7DFF] bg-clip-text text-transparent">
-            QUE HACEN CRECER TU MARCA
+          <span className="line block glow-text">MARKETING DIGITAL</span>
+          <span className="line block bg-gradient-to-r from-white via-[#F8F7F2] to-[#F2C94C] bg-clip-text text-transparent">
+            QUE HACE CRECER TU MARCA
           </span>
         </h1>
 
-        <p className="hero-sub mx-auto mt-6 max-w-2xl text-lg text-[#AAB3C5] md:text-xl">
+        <p className="hero-sub mx-auto mt-6 max-w-2xl text-lg text-[#A8A29E] md:text-xl">
           Diseño, estrategia y tecnología para negocios que quieren destacar de verdad.
         </p>
 
@@ -82,12 +82,12 @@ export function Hero() {
             <div
               key={m.label}
               data-parallax
-              className="hero-mockup glass group relative rounded-2xl p-6 transition-all duration-500 hover:border-[#2D7DFF]/50 hover:shadow-[0_0_40px_rgba(0,87,255,0.25)]"
+              className="hero-mockup glass group relative rounded-2xl p-6 transition-all duration-500 hover:border-[#F2C94C]/50 hover:shadow-[0_0_40px_rgba(212,175,55,0.25)]"
               data-cursor
             >
               <span className="text-3xl">{m.icon}</span>
               <p className="mt-3 text-sm font-medium text-white">{m.label}</p>
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#0057FF]/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#D4AF37]/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
             </div>
           ))}
         </div>
@@ -95,12 +95,12 @@ export function Hero() {
 
       <a
         href="#servicios"
-        className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-[#AAB3C5]"
+        className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-[#A8A29E]"
         aria-label="Scroll"
       >
         <span className="text-[10px] tracking-[0.3em] uppercase">Scroll</span>
-        <span className="flex h-10 w-6 justify-center rounded-full border border-[#2D7DFF]/40 p-1">
-          <span className="h-2 w-1 animate-bounce rounded-full bg-[#2D7DFF]" />
+        <span className="flex h-10 w-6 justify-center rounded-full border border-[#F2C94C]/40 p-1">
+          <span className="h-2 w-1 animate-bounce rounded-full bg-[#F2C94C]" />
         </span>
       </a>
     </section>

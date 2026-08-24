@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --blue-primary: #0057ff;
-  --blue-glow: #2d7dff;
-  --bg-primary: #050816;
-  --bg-secondary: #0a1023;
-  --white-premium: #f5f7fa;
-  --gray-text: #aab3c5;
-  --glass-bg: rgba(10, 16, 35, 0.55);
-  --glass-border: rgba(45, 125, 255, 0.22);
+  --gold-primary: #D4AF37;
+  --gold-glow: #F2C94C;
+  --bg-primary: #0A0A0A;
+  --bg-secondary: #141414;
+  --white-premium: #F8F7F2;
+  --gray-text: #A8A29E;
+  --glass-bg: rgba(10, 10, 10, 0.55);
+  --glass-border: rgba(242, 201, 76, 0.22);
 }
 
 @theme inline {
-  --color-blue-primary: var(--blue-primary);
-  --color-blue-glow: var(--blue-glow);
+  --color-gold-primary: var(--gold-primary);
+  --color-gold-glow: var(--gold-glow);
   --color-bg-primary: var(--bg-primary);
   --color-bg-secondary: var(--bg-secondary);
   --color-white-premium: var(--white-premium);
@@ -54,8 +54,8 @@ body {
 }
 
 ::selection {
-  background: rgba(0, 87, 255, 0.45);
-  color: #fff;
+  background: rgba(212, 175, 55, 0.45);
+  color: #0a0a0a;
 }
 
 .glass {
@@ -65,27 +65,27 @@ body {
   border: 1px solid var(--glass-border);
 }
 
-.glow-blue {
+.glow-gold {
   box-shadow:
-    0 0 40px rgba(0, 87, 255, 0.25),
-    0 0 80px rgba(45, 125, 255, 0.12);
+    0 0 40px rgba(212, 175, 55, 0.25),
+    0 0 80px rgba(242, 201, 76, 0.12);
 }
 
 .glow-text {
-  text-shadow: 0 0 40px rgba(45, 125, 255, 0.5);
+  text-shadow: 0 0 40px rgba(242, 201, 76, 0.5);
 }
 
 .gradient-mesh {
   background:
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 87, 255, 0.35), transparent),
-    radial-gradient(ellipse 60% 40% at 100% 50%, rgba(45, 125, 255, 0.12), transparent),
-    radial-gradient(ellipse 50% 30% at 0% 80%, rgba(0, 87, 255, 0.1), transparent);
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(212, 175, 55, 0.35), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 50%, rgba(242, 201, 76, 0.12), transparent),
+    radial-gradient(ellipse 50% 30% at 0% 80%, rgba(212, 175, 55, 0.1), transparent);
 }
 
 .line-grid {
   background-image:
-    linear-gradient(rgba(45, 125, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(45, 125, 255, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(242, 201, 76, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(242, 201, 76, 0.06) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
@@ -103,11 +103,11 @@ body {
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
-  color: #fff;
-  background: linear-gradient(135deg, var(--blue-primary), var(--blue-glow));
+  color: #0a0a0a;
+  background: linear-gradient(135deg, var(--gold-primary), var(--gold-glow));
   border-radius: 9999px;
-  border: 1px solid rgba(45, 125, 255, 0.5);
-  box-shadow: 0 0 30px rgba(0, 87, 255, 0.4);
+  border: 1px solid rgba(242, 201, 76, 0.5);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
   transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s;
   overflow: hidden;
 }
@@ -123,7 +123,7 @@ body {
 
 .btn-primary:hover {
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 0 50px rgba(0, 87, 255, 0.55);
+  box-shadow: 0 0 50px rgba(212, 175, 55, 0.55);
 }
 
 .btn-primary:hover::before {
@@ -140,15 +140,15 @@ body {
   color: var(--white-premium);
   background: transparent;
   border-radius: 9999px;
-  border: 1px solid rgba(170, 179, 197, 0.35);
+  border: 1px solid rgba(168, 162, 158, 0.35);
   backdrop-filter: blur(12px);
   transition: border-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .btn-secondary:hover {
-  border-color: var(--blue-glow);
+  border-color: var(--gold-glow);
   color: #fff;
-  box-shadow: 0 0 24px rgba(45, 125, 255, 0.2);
+  box-shadow: 0 0 24px rgba(242, 201, 76, 0.2);
 }
 
 .reveal-text .char {
@@ -172,12 +172,12 @@ body {
   width: 8px;
   height: 8px;
   margin: -4px 0 0 -4px;
-  background: #2d7dff;
+  background: #F2C94C;
   border-radius: 50%;
   pointer-events: none;
   z-index: 99999;
   mix-blend-mode: screen;
-  box-shadow: 0 0 20px #2d7dff;
+  box-shadow: 0 0 20px #F2C94C;
 }
 
 .cursor-ring {
@@ -187,11 +187,11 @@ body {
   width: 40px;
   height: 40px;
   margin: -20px 0 0 -20px;
-  border: 1px solid rgba(45, 125, 255, 0.6);
+  border: 1px solid rgba(242, 201, 76, 0.6);
   border-radius: 50%;
   pointer-events: none;
   z-index: 99998;
-  box-shadow: 0 0 30px rgba(0, 87, 255, 0.2);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
 }
 
 @media (pointer: coarse) {

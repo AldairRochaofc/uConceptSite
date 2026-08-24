@@ -17,11 +17,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mavrienza Soluciones Digitales | Agencia Digital Premium",
+  title: "Uconcept | Agencia de Marketing Digital Premium",
   description:
-    "Diseño, estrategia y tecnología para negocios que quieren destacar. Soluciones digitales premium en España.",
+    "Marketing, diseño y tecnología para negocios que quieren destacar. Soluciones de marketing digital premium en España.",
   keywords: [
-    "agencia digital",
+    "agencia de marketing",
     "marketing digital España",
     "diseño web",
     "Instagram",

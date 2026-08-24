@@ -41,16 +41,16 @@ function AnimatedStat({ value, suffix, label }: { value: number; suffix: string;
     <div className="stat-item glass rounded-2xl p-6 text-center">
       <span
         ref={numRef}
-        className="font-[family-name:var(--font-bebas)] text-5xl text-[#2D7DFF] md:text-6xl"
+        className="font-[family-name:var(--font-bebas)] text-5xl text-[#F2C94C] md:text-6xl"
       >
         0{suffix}
       </span>
-      <p className="mt-2 text-sm tracking-wider text-[#AAB3C5] uppercase">{label}</p>
+      <p className="mt-2 text-sm tracking-wider text-[#A8A29E] uppercase">{label}</p>
     </div>
   );
 }
 
-export function WhyMavrienza() {
+export function WhyUconcept() {
   const sectionRef = useRef<HTMLElement>(null);
 
   useGSAP(
@@ -83,11 +83,11 @@ export function WhyMavrienza() {
       <div className="mx-auto max-w-7xl">
         <div className="why-content grid gap-16 lg:grid-cols-2 lg:items-center">
           <div>
-            <p className="text-sm tracking-[0.3em] text-[#2D7DFF] uppercase">Por qué Mavrienza</p>
+            <p className="text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Por qué Uconcept</p>
             <h2 className="mt-4 font-[family-name:var(--font-bebas)] text-4xl leading-tight text-white md:text-5xl">
               Tu marca necesita más que diseños bonitos.
             </h2>
-            <p className="mt-6 text-lg text-[#AAB3C5]">
+            <p className="mt-6 text-lg text-[#A8A29E]">
               Creamos presencia digital estratégica para generar impacto, autoridad y ventas.
             </p>
             <ul className="mt-8 space-y-4">
@@ -96,8 +96,8 @@ export function WhyMavrienza() {
                 "Diseño premium que transmite confianza",
                 "Resultados medibles y reportes claros",
               ].map((item) => (
-                <li key={item} className="flex items-center gap-3 text-[#F5F7FA]">
-                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#0057FF]/30 text-xs text-[#2D7DFF]">
+                <li key={item} className="flex items-center gap-3 text-[#F8F7F2]">
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#D4AF37]/30 text-xs text-[#F2C94C]">
                     ✓
                   </span>
                   {item}
@@ -106,19 +106,19 @@ export function WhyMavrienza() {
             </ul>
           </div>
 
-          <div className="dashboard-panel glass rounded-3xl p-8 glow-blue">
-            <p className="mb-6 text-xs tracking-[0.2em] text-[#AAB3C5] uppercase">
+          <div className="dashboard-panel glass rounded-3xl p-8 glow-gold">
+            <p className="mb-6 text-xs tracking-[0.2em] text-[#A8A29E] uppercase">
               Panel de rendimiento
             </p>
             {["Alcance", "Engagement", "Conversiones", "Retención"].map((label, i) => (
               <div key={label} className="mb-5">
                 <div className="mb-2 flex justify-between text-sm">
-                  <span className="text-[#AAB3C5]">{label}</span>
-                  <span className="text-[#2D7DFF]">{bars[i]}%</span>
+                  <span className="text-[#A8A29E]">{label}</span>
+                  <span className="text-[#F2C94C]">{bars[i]}%</span>
                 </div>
                 <div className="h-2 overflow-hidden rounded-full bg-white/5">
                   <div
-                    className="growth-bar h-full rounded-full bg-gradient-to-r from-[#0057FF] to-[#2D7DFF]"
+                    className="growth-bar h-full rounded-full bg-gradient-to-r from-[#D4AF37] to-[#F2C94C]"
                     style={{ width: `${bars[i]}%` }}
                   />
                 </div>

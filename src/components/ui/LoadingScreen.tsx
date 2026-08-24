@@ -40,21 +40,21 @@ export function LoadingScreen() {
   return (
     <div
       ref={overlayRef}
-      className="fixed inset-0 z-[100000] flex flex-col items-center justify-center bg-[#050816]"
+      className="fixed inset-0 z-[100000] flex flex-col items-center justify-center bg-[#0A0A0A]"
     >
       <div className="mb-8 text-center">
         <span className="font-[family-name:var(--font-bebas)] text-5xl tracking-[0.2em] text-white md:text-7xl glow-text">
-          MAVRIENZA
+          UCONCEPT
         </span>
-        <p ref={textRef} className="mt-2 text-sm tracking-[0.35em] text-[#aab3c5] opacity-0">
-          SOLUCIONES DIGITALES
+        <p ref={textRef} className="mt-2 text-sm tracking-[0.35em] text-[#A8A29E] opacity-0">
+          MARKETING DIGITAL
         </p>
       </div>
       <div className="h-[2px] w-64 overflow-hidden rounded-full bg-white/10 md:w-80">
         <div
           ref={progressRef}
-          className="h-full w-0 rounded-full bg-gradient-to-r from-[#0057FF] to-[#2D7DFF]"
-          style={{ boxShadow: "0 0 20px #2D7DFF" }}
+          className="h-full w-0 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#F2C94C]"
+          style={{ boxShadow: "0 0 20px #F2C94C" }}
         />
       </div>
     </div>

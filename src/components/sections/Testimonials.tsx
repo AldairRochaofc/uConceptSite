@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: "Carlos Mendoza",
     role: "Dueño, Restaurante La Brasa",
-    text: "Mavrienza transformó nuestra presencia digital. En tres meses duplicamos reservas desde Instagram.",
+    text: "Uconcept transformó nuestra presencia digital. En tres meses duplicamos reservas desde Instagram.",
     initials: "CM",
   },
   {
@@ -58,7 +58,7 @@ export function Testimonials() {
   return (
     <section ref={sectionRef} className="section-padding testimonial-section relative">
       <div className="mx-auto max-w-4xl text-center">
-        <p className="text-sm tracking-[0.3em] text-[#2D7DFF] uppercase">Testimonios</p>
+        <p className="text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Testimonios</p>
         <h2 className="mt-4 font-[family-name:var(--font-bebas)] text-4xl text-white md:text-5xl">
           LO QUE DICEN NUESTROS CLIENTES
         </h2>
@@ -73,13 +73,13 @@ export function Testimonials() {
               transition={{ duration: 0.5 }}
               className="glass mx-auto max-w-2xl rounded-3xl p-10 md:p-14"
             >
-              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#0057FF] to-[#2D7DFF] text-xl font-bold text-white">
+              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#D4AF37] to-[#F2C94C] text-xl font-bold text-[#0A0A0A]">
                 {t.initials}
               </div>
-              <p className="text-lg leading-relaxed text-[#F5F7FA] md:text-xl">&ldquo;{t.text}&rdquo;</p>
+              <p className="text-lg leading-relaxed text-[#F8F7F2] md:text-xl">&ldquo;{t.text}&rdquo;</p>
               <p className="mt-6 font-semibold text-white">{t.name}</p>
-              <p className="text-sm text-[#AAB3C5]">{t.role}</p>
-              <div className="mt-4 flex justify-center gap-1 text-[#2D7DFF]">
+              <p className="text-sm text-[#A8A29E]">{t.role}</p>
+              <div className="mt-4 flex justify-center gap-1 text-[#F2C94C]">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <span key={i}>★</span>
                 ))}
@@ -95,7 +95,7 @@ export function Testimonials() {
               type="button"
               onClick={() => setActive(i)}
               className={`h-2 rounded-full transition-all ${
-                i === active ? "w-8 bg-[#2D7DFF]" : "w-2 bg-white/20"
+                i === active ? "w-8 bg-[#F2C94C]" : "w-2 bg-white/20"
               }`}
               aria-label={`Testimonio ${i + 1}`}
               data-cursor

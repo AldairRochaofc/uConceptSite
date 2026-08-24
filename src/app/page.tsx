@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/sections/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
-import { WhyMavrienza } from "@/components/sections/WhyMavrienza";
+import { WhyUconcept } from "@/components/sections/WhyUconcept";
 import { Projects } from "@/components/sections/Projects";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Process } from "@/components/sections/Process";
@@ -21,7 +21,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Services />
-      <WhyMavrienza />
+      <WhyUconcept />
       <Projects />
       <Testimonials />
       <Process />

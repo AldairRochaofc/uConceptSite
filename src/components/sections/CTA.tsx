@@ -35,14 +35,14 @@ export function CTA() {
   return (
     <section id="contacto" ref={sectionRef} className="section-padding relative overflow-hidden">
       <div className="cta-glow pointer-events-none absolute inset-0 flex items-center justify-center">
-        <div className="h-[400px] w-[600px] rounded-full bg-[#0057FF]/30 blur-[150px]" />
+        <div className="h-[400px] w-[600px] rounded-full bg-[#D4AF37]/30 blur-[150px]" />
       </div>
 
-      <div className="cta-content relative z-10 mx-auto max-w-4xl rounded-3xl border border-[#2D7DFF]/30 bg-[#0A1023]/80 p-12 text-center backdrop-blur-xl md:p-20 glow-blue">
+      <div className="cta-content relative z-10 mx-auto max-w-4xl rounded-3xl border border-[#F2C94C]/30 bg-[#141414]/80 p-12 text-center backdrop-blur-xl md:p-20 glow-gold">
         <h2 className="font-[family-name:var(--font-bebas)] text-4xl leading-tight text-white md:text-6xl glow-text">
           Tu negocio merece una presencia digital de otro nivel.
         </h2>
-        <p className="mx-auto mt-6 max-w-xl text-[#AAB3C5]">
+        <p className="mx-auto mt-6 max-w-xl text-[#A8A29E]">
           Cuéntanos tu proyecto y recibe una propuesta personalizada en menos de 24 horas.
         </p>
         <a
@@ -54,13 +54,13 @@ export function CTA() {
         >
           Solicitar Presupuesto Ahora
         </a>
-        <p className="mt-6 text-sm text-[#AAB3C5]">
+        <p className="mt-6 text-sm text-[#A8A29E]">
           Sin compromiso · Respuesta en 24h · Clientes en toda España
         </p>
       </div>
 
-      <div className="pointer-events-none absolute top-20 left-10 h-20 w-20 rounded-full border border-[#2D7DFF]/20 opacity-40" />
-      <div className="pointer-events-none absolute right-16 bottom-20 h-32 w-32 rounded-full border border-[#2D7DFF]/15 opacity-30" />
+      <div className="pointer-events-none absolute top-20 left-10 h-20 w-20 rounded-full border border-[#F2C94C]/20 opacity-40" />
+      <div className="pointer-events-none absolute right-16 bottom-20 h-32 w-32 rounded-full border border-[#F2C94C]/15 opacity-30" />
     </section>
   );
 }

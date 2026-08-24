@@ -27,10 +27,10 @@ export function Navbar() {
         gsap.to(nav, {
           backgroundColor:
             self.progress > 0
-              ? "rgba(5, 8, 22, 0.85)"
-              : "rgba(5, 8, 22, 0)",
+              ? "rgba(10, 10, 10, 0.85)"
+              : "rgba(10, 10, 10, 0)",
           backdropFilter: self.progress > 0 ? "blur(20px)" : "blur(0px)",
-          borderColor: self.progress > 0 ? "rgba(45,125,255,0.15)" : "transparent",
+          borderColor: self.progress > 0 ? "rgba(242, 201, 76,0.15)" : "transparent",
           duration: 0.3,
         });
       },
@@ -44,17 +44,17 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
         <a href="#" className="group flex items-center gap-2" data-cursor>
-          <span className="font-[family-name:var(--font-bebas)] text-2xl tracking-[0.15em] text-white transition-all group-hover:text-[#2D7DFF] md:text-3xl">
-            MAVRIENZA
+          <span className="font-[family-name:var(--font-bebas)] text-2xl tracking-[0.15em] text-white transition-all group-hover:text-[#F2C94C] md:text-3xl">
+            UCONCEPT
           </span>
-          <span className="hidden h-2 w-2 rounded-full bg-[#2D7DFF] shadow-[0_0_12px_#2D7DFF] sm:block" />
+          <span className="hidden h-2 w-2 rounded-full bg-[#F2C94C] shadow-[0_0_12px_#F2C94C] sm:block" />
         </a>
         <ul className="hidden items-center gap-8 lg:flex">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="text-sm text-[#AAB3C5] transition-colors hover:text-white"
+                className="text-sm text-[#A8A29E] transition-colors hover:text-white"
                 data-cursor
               >
                 {l.label}
