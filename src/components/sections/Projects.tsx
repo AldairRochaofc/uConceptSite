@@ -9,11 +9,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   { title: "Restaurante La Brasa", category: "Restaurantes", gradient: "from-amber-900/40 to-[#D4AF37]/25" },
-  { title: "Coach María López", category: "Marcas personales", gradient: "from-neutral-900/50 to-[#F2C94C]/20" },
-  { title: "Iglesia Vida Nueva", category: "Iglesias", gradient: "from-zinc-900/50 to-amber-600/20" },
-  { title: "Ferretería El Maestro", category: "Negocios locales", gradient: "from-stone-800/40 to-[#D4AF37]/20" },
-  { title: "Boutique Élite Moda", category: "Ecommerce", gradient: "from-black/50 to-[#F2C94C]/25" },
-  { title: "Clínica Dental Sonrisa", category: "Negocios locales", gradient: "from-zinc-800/40 to-amber-500/20" },
+  { title: "Coach María López", category: "Marcas pessoais", gradient: "from-neutral-900/50 to-[#F2C94C]/20" },
+  { title: "Igreja Vida Nova", category: "Igrejas", gradient: "from-zinc-900/50 to-amber-600/20" },
+  { title: "Ferragens do Mestre", category: "Negócios locais", gradient: "from-stone-800/40 to-[#D4AF37]/20" },
+  { title: "Boutique Elite Moda", category: "Ecommerce", gradient: "from-black/50 to-[#F2C94C]/25" },
+  { title: "Clínica Odontológica Sorriso", category: "Negócios locais", gradient: "from-zinc-800/40 to-amber-500/20" },
 ];
 
 export function Projects() {
@@ -25,15 +25,21 @@ export function Projects() {
       const track = trackRef.current;
       if (!track) return;
 
+      // Distância real de overflow do trilho — a mesma expressão é usada tanto
+      // no destino do "x" quanto no comprimento do pin, para que o arraste
+      // horizontal fique 1:1 com o scroll vertical (sem “sobra” nem “corte”).
+      const getDistance = () => Math.max(0, track.scrollWidth - window.innerWidth + 80);
+
       gsap.to(track, {
-        x: () => -(track.scrollWidth - window.innerWidth + 80),
+        x: () => -getDistance(),
         ease: "none",
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top top",
-          end: () => `+=${track.scrollWidth}`,
+          end: () => `+=${getDistance()}`,
           pin: true,
           scrub: 1,
+          anticipatePin: 1,
           invalidateOnRefresh: true,
         },
       });
@@ -46,7 +52,7 @@ export function Projects() {
       <div className="section-padding pb-0">
         <p className="text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Portfolio</p>
         <h2 className="mt-4 font-[family-name:var(--font-bebas)] text-4xl text-white md:text-6xl">
-          PROYECTOS QUE HABLAN POR SÍ SOLOS
+          PROJETOS QUE FALAM POR SI SÓ
         </h2>
       </div>
 
@@ -63,7 +69,7 @@ export function Projects() {
               <span className="text-xs tracking-[0.2em] text-[#F2C94C] uppercase">{p.category}</span>
               <h3 className="mt-2 font-[family-name:var(--font-bebas)] text-3xl text-white">{p.title}</h3>
               <p className="mt-4 translate-y-4 text-sm text-[#A8A29E] opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                Ver caso de estudio →
+                Ver estudo de caso →
               </p>
             </div>
             <div className="absolute inset-0 scale-100 transition-transform duration-700 group-hover:scale-105" />

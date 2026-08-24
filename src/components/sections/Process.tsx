@@ -8,11 +8,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const steps = [
-  { num: "01", title: "Estrategia", desc: "Analizamos tu marca, competencia y objetivos." },
-  { num: "02", title: "Diseño", desc: "Creamos identidad visual y piezas impactantes." },
-  { num: "03", title: "Producción", desc: "Desarrollamos contenido y activos digitales." },
-  { num: "04", title: "Lanzamiento", desc: "Publicamos y activamos tu presencia digital." },
-  { num: "05", title: "Optimización", desc: "Medimos, ajustamos y escalamos resultados." },
+  { num: "01", title: "Estratégia", desc: "Analisamos sua marca, concorrência e objetivos." },
+  { num: "02", title: "Design", desc: "Criamos identidade visual e peças impactantes." },
+  { num: "03", title: "Produção", desc: "Desenvolvemos conteúdo e ativos digitais." },
+  { num: "04", title: "Lançamento", desc: "Publicamos e ativamos sua presença digital." },
+  { num: "05", title: "Otimização", desc: "Medimos, ajustamos e escalamos resultados." },
 ];
 
 export function Process() {
@@ -43,9 +43,9 @@ export function Process() {
   return (
     <section id="proceso" ref={sectionRef} className="section-padding relative bg-[#141414]">
       <div className="mx-auto max-w-4xl">
-        <p className="text-center text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Proceso</p>
+        <p className="text-center text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Processo</p>
         <h2 className="mt-4 text-center font-[family-name:var(--font-bebas)] text-4xl text-white md:text-6xl">
-          CÓMO TRABAJAMOS
+          COMO TRABALHAMOS
         </h2>
 
         <div className="relative mt-20">

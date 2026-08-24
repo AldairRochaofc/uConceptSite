@@ -1,8 +1,8 @@
 const quickLinks = [
-  { href: "#servicios", label: "Servicios" },
-  { href: "#proyectos", label: "Proyectos" },
-  { href: "#proceso", label: "Proceso" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "#servicios", label: "Serviços" },
+  { href: "#proyectos", label: "Projetos" },
+  { href: "#proceso", label: "Processo" },
+  { href: "#contacto", label: "Contato" },
 ];
 
 const socials = [
@@ -21,15 +21,15 @@ export function Footer() {
           <p className="font-[family-name:var(--font-bebas)] text-3xl tracking-[0.15em] text-white">
             UCONCEPT
           </p>
-          <p className="mt-2 text-sm text-[#A8A29E]">Agencia de Marketing</p>
+          <p className="mt-2 text-sm text-[#A8A29E]">Agência de Marketing</p>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-[#A8A29E]">
-            Agencia de marketing digital premium en España. Estrategia, diseño y tecnología para
-            marcas que quieren destacar.
+            Agência de marketing digital premium no Brasil. Estratégia, design e tecnologia para
+            marcas que querem se destacar.
           </p>
         </div>
 
         <div>
-          <p className="text-sm font-semibold text-white">Enlaces</p>
+          <p className="text-sm font-semibold text-white">Links</p>
           <ul className="mt-4 space-y-2">
             {quickLinks.map((l) => (
               <li key={l.href}>
@@ -42,7 +42,7 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="text-sm font-semibold text-white">Contacto</p>
+          <p className="text-sm font-semibold text-white">Contato</p>
           <ul className="mt-4 space-y-3 text-sm text-[#A8A29E]">
             <li>
               <a href="mailto:hola@uconcept.com" className="hover:text-[#F2C94C]">
@@ -73,7 +73,7 @@ export function Footer() {
       </div>
 
       <p className="mx-auto mt-12 max-w-7xl border-t border-white/5 pt-8 text-center text-xs text-[#A8A29E]">
-        © {new Date().getFullYear()} Uconcept Marketing Digital. Todos los derechos reservados.
+        © {new Date().getFullYear()} Uconcept Marketing Digital. Todos os direitos reservados.
       </p>
     </footer>
   );

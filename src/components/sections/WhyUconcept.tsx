@@ -8,10 +8,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { value: 120, suffix: "+", label: "proyectos" },
-  { value: 98, suffix: "%", label: "satisfacción" },
-  { value: 24, suffix: "h", label: "respuesta" },
-  { value: 100, suffix: "%", label: "resultados reales" },
+  { value: 120, suffix: "+", label: "projetos" },
+  { value: 98, suffix: "%", label: "satisfação" },
+  { value: 24, suffix: "h", label: "resposta" },
+  { value: 100, suffix: "%", label: "resultados reais" },
 ];
 
 function AnimatedStat({ value, suffix, label }: { value: number; suffix: string; label: string }) {
@@ -83,18 +83,18 @@ export function WhyUconcept() {
       <div className="mx-auto max-w-7xl">
         <div className="why-content grid gap-16 lg:grid-cols-2 lg:items-center">
           <div>
-            <p className="text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Por qué Uconcept</p>
+            <p className="text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Por que a Uconcept</p>
             <h2 className="mt-4 font-[family-name:var(--font-bebas)] text-4xl leading-tight text-white md:text-5xl">
-              Tu marca necesita más que diseños bonitos.
+              Sua marca precisa de mais que designs bonitos.
             </h2>
             <p className="mt-6 text-lg text-[#A8A29E]">
-              Creamos presencia digital estratégica para generar impacto, autoridad y ventas.
+              Criamos presença digital estratégica para gerar impacto, autoridade e vendas.
             </p>
             <ul className="mt-8 space-y-4">
               {[
-                "Estrategia alineada con tus objetivos de negocio",
-                "Diseño premium que transmite confianza",
-                "Resultados medibles y reportes claros",
+                "Estratégia alinhada com os objetivos do seu negócio",
+                "Design premium que transmite confiança",
+                "Resultados mensuráveis e relatórios claros",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-[#F8F7F2]">
                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#D4AF37]/30 text-xs text-[#F2C94C]">
@@ -108,9 +108,9 @@ export function WhyUconcept() {
 
           <div className="dashboard-panel glass rounded-3xl p-8 glow-gold">
             <p className="mb-6 text-xs tracking-[0.2em] text-[#A8A29E] uppercase">
-              Panel de rendimiento
+              Painel de desempenho
             </p>
-            {["Alcance", "Engagement", "Conversiones", "Retención"].map((label, i) => (
+            {["Alcance", "Engagement", "Conversões", "Retenção"].map((label, i) => (
               <div key={label} className="mb-5">
                 <div className="mb-2 flex justify-between text-sm">
                   <span className="text-[#A8A29E]">{label}</span>

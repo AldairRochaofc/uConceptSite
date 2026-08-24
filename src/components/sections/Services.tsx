@@ -9,33 +9,33 @@ gsap.registerPlugin(ScrollTrigger);
 
 const services = [
   {
-    title: "Gestión de Instagram",
-    desc: "Contenido estratégico, comunidad activa y crecimiento orgánico real.",
+    title: "Gestão de Instagram",
+    desc: "Conteúdo estratégico, comunidade ativa e crescimento orgânico real.",
     icon: "◈",
   },
   {
-    title: "Diseño para Redes Sociales",
-    desc: "Piezas visuales premium que elevan tu marca en cada publicación.",
+    title: "Design para Redes Sociais",
+    desc: "Peças visuais premium que elevam sua marca em cada publicação.",
     icon: "◇",
   },
   {
-    title: "Edición de Videos para Redes",
-    desc: "Reels y videos cinematográficos que captan atención en segundos.",
+    title: "Edição de Vídeos para Redes",
+    desc: "Reels e vídeos cinematográficos que capturam atenção em segundos.",
     icon: "▣",
   },
   {
-    title: "Desarrollo de Sitios Web",
-    desc: "Webs rápidas, modernas y optimizadas para convertir visitantes.",
+    title: "Desenvolvimento de Sites",
+    desc: "Sites rápidos, modernos e otimizados para converter visitantes.",
     icon: "⬡",
   },
   {
     title: "Branding Digital",
-    desc: "Identidad visual coherente que transmite autoridad y confianza.",
+    desc: "Identidade visual coerente que transmite autoridade e confiança.",
     icon: "◎",
   },
   {
-    title: "Estrategia de Marketing",
-    desc: "Planes digitales orientados a resultados medibles y ventas.",
+    title: "Estratégia de Marketing",
+    desc: "Planos digitais orientados a resultados mensuráveis e vendas.",
     icon: "✦",
   },
 ];
@@ -63,12 +63,12 @@ export function Services() {
   return (
     <section id="servicios" ref={sectionRef} className="section-padding relative bg-[#141414]">
       <div className="mx-auto max-w-7xl">
-        <p className="text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Servicios</p>
+        <p className="text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Serviços</p>
         <h2 className="mt-4 font-[family-name:var(--font-bebas)] text-4xl text-white md:text-6xl">
-          TODO LO QUE TU MARCA NECESITA
+          TUDO O QUE SUA MARCA PRECISA
         </h2>
         <p className="mt-4 max-w-xl text-[#A8A29E]">
-          Soluciones integrales diseñadas para negocios ambiciosos en España.
+          Soluções completas desenhadas para negócios ambiciosos no Brasil.
         </p>
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

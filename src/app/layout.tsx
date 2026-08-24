@@ -17,13 +17,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Uconcept | Agencia de Marketing Digital Premium",
+  title: "Uconcept | Agência de Marketing Digital Premium",
   description:
-    "Marketing, diseño y tecnología para negocios que quieren destacar. Soluciones de marketing digital premium en España.",
+    "Marketing, design e tecnologia para negócios que querem se destacar. Soluções de marketing digital premium no Brasil.",
   keywords: [
-    "agencia de marketing",
-    "marketing digital España",
-    "diseño web",
+    "agência de marketing",
+    "marketing digital Brasil",
+    "criação de sites",
     "Instagram",
     "branding",
   ],
@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${bebas.variable} ${inter.variable}`}>
+    <html lang="pt-BR" className={`${bebas.variable} ${inter.variable}`}>
       <body className="min-h-screen antialiased">
         <LoadingScreen />
         <CustomCursor />

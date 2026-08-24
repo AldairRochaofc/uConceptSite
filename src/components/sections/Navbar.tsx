@@ -7,11 +7,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const links = [
-  { href: "#servicios", label: "Servicios" },
-  { href: "#por-que", label: "Por qué" },
-  { href: "#proyectos", label: "Proyectos" },
-  { href: "#proceso", label: "Proceso" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "#servicios", label: "Serviços" },
+  { href: "#por-que", label: "Por que" },
+  { href: "#proyectos", label: "Projetos" },
+  { href: "#proceso", label: "Processo" },
+  { href: "#contacto", label: "Contato" },
 ];
 
 export function Navbar() {
@@ -63,7 +63,7 @@ export function Navbar() {
           ))}
         </ul>
         <a href="#contacto" className="btn-primary hidden text-sm lg:inline-flex" data-cursor>
-          Solicitar Presupuesto
+          Solicitar Orçamento
         </a>
       </nav>
     </header>

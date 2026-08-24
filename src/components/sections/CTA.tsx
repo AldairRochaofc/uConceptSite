@@ -40,10 +40,10 @@ export function CTA() {
 
       <div className="cta-content relative z-10 mx-auto max-w-4xl rounded-3xl border border-[#F2C94C]/30 bg-[#141414]/80 p-12 text-center backdrop-blur-xl md:p-20 glow-gold">
         <h2 className="font-[family-name:var(--font-bebas)] text-4xl leading-tight text-white md:text-6xl glow-text">
-          Tu negocio merece una presencia digital de otro nivel.
+          Seu negócio merece uma presença digital de outro nível.
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-[#A8A29E]">
-          Cuéntanos tu proyecto y recibe una propuesta personalizada en menos de 24 horas.
+          Conte-nos sobre seu projeto e receba uma proposta personalizada em menos de 24 horas.
         </p>
         <a
           href="https://wa.me/34600000000"
@@ -52,10 +52,10 @@ export function CTA() {
           className="btn-primary mt-10 inline-flex text-lg"
           data-cursor
         >
-          Solicitar Presupuesto Ahora
+          Solicitar Orçamento Agora
         </a>
         <p className="mt-6 text-sm text-[#A8A29E]">
-          Sin compromiso · Respuesta en 24h · Clientes en toda España
+          Sem compromisso · Resposta em 24h · Clientes em todo o Brasil
         </p>
       </div>
 

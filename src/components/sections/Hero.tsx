@@ -6,7 +6,7 @@ import { gsap } from "gsap";
 
 const mockups = [
   { label: "Instagram", icon: "📱", delay: 0 },
-  { label: "Websites", icon: "🌐", delay: 0.15 },
+  { label: "Sites", icon: "🌐", delay: 0.15 },
   { label: "Reels", icon: "🎬", delay: 0.3 },
   { label: "Analytics", icon: "📊", delay: 0.45 },
 ];
@@ -60,20 +60,20 @@ export function Hero() {
         <h1 className="hero-headline font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,8vw,5.5rem)] leading-[0.95] tracking-wide text-white">
           <span className="line block glow-text">MARKETING DIGITAL</span>
           <span className="line block bg-gradient-to-r from-white via-[#F8F7F2] to-[#F2C94C] bg-clip-text text-transparent">
-            QUE HACE CRECER TU MARCA
+            QUE FAZ SUA MARCA CRESCER
           </span>
         </h1>
 
         <p className="hero-sub mx-auto mt-6 max-w-2xl text-lg text-[#A8A29E] md:text-xl">
-          Diseño, estrategia y tecnología para negocios que quieren destacar de verdad.
+          Design, estratégia e tecnologia para negócios que querem se destacar de verdade.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a href="#contacto" className="hero-cta btn-primary" data-cursor>
-            Solicitar Presupuesto
+            Solicitar Orçamento
           </a>
           <a href="#proyectos" className="hero-cta btn-secondary" data-cursor>
-            Ver Proyectos
+            Ver Projetos
           </a>
         </div>
 
@@ -96,7 +96,7 @@ export function Hero() {
       <a
         href="#servicios"
         className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-[#A8A29E]"
-        aria-label="Scroll"
+        aria-label="Rolar"
       >
         <span className="text-[10px] tracking-[0.3em] uppercase">Scroll</span>
         <span className="flex h-10 w-6 justify-center rounded-full border border-[#F2C94C]/40 p-1">

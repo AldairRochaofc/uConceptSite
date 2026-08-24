@@ -11,20 +11,20 @@ gsap.registerPlugin(ScrollTrigger);
 const testimonials = [
   {
     name: "Carlos Mendoza",
-    role: "Dueño, Restaurante La Brasa",
-    text: "Uconcept transformó nuestra presencia digital. En tres meses duplicamos reservas desde Instagram.",
+    role: "Dono, Restaurante La Brasa",
+    text: "A Uconcept transformou nossa presença digital. Em três meses duplicamos as reservas pelo Instagram.",
     initials: "CM",
   },
   {
     name: "Elena Ruiz",
     role: "Coach de vida",
-    text: "Profesionalismo absoluto. Mi marca personal ahora transmite exactamente la autoridad que buscaba.",
+    text: "Profissionalismo absoluto. Minha marca pessoal agora transmite exatamente a autoridade que eu buscava.",
     initials: "ER",
   },
   {
     name: "Pastor David G.",
-    role: "Iglesia Vida Nueva",
-    text: "El equipo entendió nuestra visión y la plasmó con elegancia. Comunicación impecable en todo momento.",
+    role: "Igreja Vida Nova",
+    text: "A equipe entendeu nossa visão e a expressou com elegância. Comunicação impecável em todos os momentos.",
     initials: "DG",
   },
 ];
@@ -58,9 +58,9 @@ export function Testimonials() {
   return (
     <section ref={sectionRef} className="section-padding testimonial-section relative">
       <div className="mx-auto max-w-4xl text-center">
-        <p className="text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Testimonios</p>
+        <p className="text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Depoimentos</p>
         <h2 className="mt-4 font-[family-name:var(--font-bebas)] text-4xl text-white md:text-5xl">
-          LO QUE DICEN NUESTROS CLIENTES
+          O QUE DIZEM NOSSOS CLIENTES
         </h2>
 
         <div className="relative mt-16 min-h-[280px]">
@@ -97,7 +97,7 @@ export function Testimonials() {
               className={`h-2 rounded-full transition-all ${
                 i === active ? "w-8 bg-[#F2C94C]" : "w-2 bg-white/20"
               }`}
-              aria-label={`Testimonio ${i + 1}`}
+              aria-label={`Depoimento ${i + 1}`}
               data-cursor
             />
           ))}
