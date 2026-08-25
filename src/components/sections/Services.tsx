@@ -9,34 +9,19 @@ gsap.registerPlugin(ScrollTrigger);
 
 const services = [
   {
-    title: "Gestão de Instagram",
-    desc: "Conteúdo estratégico, comunidade ativa e crescimento orgânico real.",
+    title: "Social Media",
+    desc: "Gestão de Redes Sociais focada em produção de conteúdos impactante, mostrando ao mercado o seu conceito.",
     icon: "◈",
   },
   {
-    title: "Design para Redes Sociais",
-    desc: "Peças visuais premium que elevam sua marca em cada publicação.",
-    icon: "◇",
-  },
-  {
-    title: "Edição de Vídeos para Redes",
-    desc: "Reels e vídeos cinematográficos que capturam atenção em segundos.",
-    icon: "▣",
-  },
-  {
-    title: "Desenvolvimento de Sites",
-    desc: "Sites rápidos, modernos e otimizados para converter visitantes.",
+    title: "Sites",
+    desc: "Programação e Gestão de sites e plataformas e-commerce seguindo regras de para rankeamento.",
     icon: "⬡",
   },
   {
-    title: "Branding Digital",
-    desc: "Identidade visual coerente que transmite autoridade e confiança.",
-    icon: "◎",
-  },
-  {
-    title: "Estratégia de Marketing",
-    desc: "Planos digitais orientados a resultados mensuráveis e vendas.",
-    icon: "✦",
+    title: "Filmmaker",
+    desc: "Realizamos também todas as captações com entregas de fotos e vídeos em alta resolução, feitas em Drone (4k60fps) e celular (4k30fps).",
+    icon: "▣",
   },
 ];
 
@@ -65,10 +50,10 @@ export function Services() {
       <div className="mx-auto max-w-7xl">
         <p className="text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Serviços</p>
         <h2 className="mt-4 font-[family-name:var(--font-bebas)] text-4xl text-white md:text-6xl">
-          TUDO O QUE SUA MARCA PRECISA
+          MARKETING
         </h2>
         <p className="mt-4 max-w-xl text-[#A8A29E]">
-          Soluções completas desenhadas para negócios ambiciosos no Brasil.
+          Soluções focadas em otimizar a sua presença no mercado.
         </p>
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

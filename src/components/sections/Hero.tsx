@@ -18,10 +18,22 @@ export function Hero() {
     () => {
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
       tl.from(".hero-logo", { opacity: 0, y: 30, duration: 1 })
-        .from(".hero-headline .line", { opacity: 0, y: 80, duration: 1.1, stagger: 0.12 }, "-=0.5")
+        .from(
+          ".hero-headline .line",
+          { opacity: 0, y: 80, duration: 1.1, stagger: 0.12 },
+          "-=0.5",
+        )
         .from(".hero-sub", { opacity: 0, y: 40, duration: 0.9 }, "-=0.6")
-        .from(".hero-cta", { opacity: 0, y: 30, duration: 0.8, stagger: 0.1 }, "-=0.5")
-        .from(".hero-mockup", { opacity: 0, y: 60, scale: 0.9, duration: 1, stagger: 0.12 }, "-=0.7");
+        .from(
+          ".hero-cta",
+          { opacity: 0, y: 30, duration: 0.8, stagger: 0.1 },
+          "-=0.5",
+        )
+        .from(
+          ".hero-mockup",
+          { opacity: 0, y: 60, scale: 0.9, duration: 1, stagger: 0.12 },
+          "-=0.7",
+        );
 
       gsap.to(".hero-glow", {
         opacity: 0.6,
@@ -41,7 +53,7 @@ export function Hero() {
         stagger: { each: 0.4 },
       });
     },
-    { scope: containerRef }
+    { scope: containerRef },
   );
 
   return (
@@ -65,15 +77,13 @@ export function Hero() {
         </h1>
 
         <p className="hero-sub mx-auto mt-6 max-w-2xl text-lg text-[#A8A29E] md:text-xl">
-          Design, estratégia e tecnologia para negócios que querem se destacar de verdade.
+          Design, estratégia e tecnologia para negócios que querem se destacar
+          de verdade.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a href="#contacto" className="hero-cta btn-primary" data-cursor>
             Solicitar Orçamento
-          </a>
-          <a href="#proyectos" className="hero-cta btn-secondary" data-cursor>
-            Ver Projetos
           </a>
         </div>
 

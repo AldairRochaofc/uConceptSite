@@ -6,9 +6,7 @@ const quickLinks = [
 ];
 
 const socials = [
-  { href: "https://instagram.com", label: "Instagram" },
-  { href: "https://linkedin.com", label: "LinkedIn" },
-  { href: "https://tiktok.com", label: "TikTok" },
+  { href: "https://www.instagram.com/uconcept.br/", label: "Instagram" },
 ];
 
 export function Footer() {
@@ -45,12 +43,12 @@ export function Footer() {
           <p className="text-sm font-semibold text-white">Contato</p>
           <ul className="mt-4 space-y-3 text-sm text-[#A8A29E]">
             <li>
-              <a href="mailto:hola@uconcept.com" className="hover:text-[#F2C94C]">
-                hola@uconcept.com
+              <a href="mailto:uconceptbr@gmail.com" className="hover:text-[#F2C94C]">
+                uconceptbr@gmail.com
               </a>
             </li>
             <li>
-              <a href="https://wa.me/34600000000" className="hover:text-[#F2C94C]">
+              <a href="https://wa.me/554788134945" className="hover:text-[#F2C94C]">
                 WhatsApp
               </a>
             </li>

@@ -1,19 +1,24 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import img1 from "@/img/img1uc.jpg";
+import img2 from "@/img/img2uc.jpg";
+import img3 from "@/img/img3uc.jpg";
+import img4 from "@/img/img4uc.jpg";
+import img5 from "@/img/img5uc.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
-  { title: "Restaurante La Brasa", category: "Restaurantes", gradient: "from-amber-900/40 to-[#D4AF37]/25" },
-  { title: "Coach María López", category: "Marcas pessoais", gradient: "from-neutral-900/50 to-[#F2C94C]/20" },
-  { title: "Igreja Vida Nova", category: "Igrejas", gradient: "from-zinc-900/50 to-amber-600/20" },
-  { title: "Ferragens do Mestre", category: "Negócios locais", gradient: "from-stone-800/40 to-[#D4AF37]/20" },
-  { title: "Boutique Elite Moda", category: "Ecommerce", gradient: "from-black/50 to-[#F2C94C]/25" },
-  { title: "Clínica Odontológica Sorriso", category: "Negócios locais", gradient: "from-zinc-800/40 to-amber-500/20" },
+  { title: "Cond. Parque do Lago", category: "Entrega de Aço em Obras", gradient: "from-amber-900/40 to-[#D4AF37]/25", image: img1 },
+  { title: "Cond. Alínea Reserva", category: "Produção de Reels Semanal", gradient: "from-neutral-900/50 to-[#F2C94C]/20", image: img2 },
+  { title: "Praia das Cabeçudas", category: "Entrega de Casa", gradient: "from-zinc-900/50 to-amber-600/20", image: img3 },
+  { title: "Rio do Meio", category: "Produção de Reels para Loteamentos", gradient: "from-stone-800/40 to-[#D4AF37]/20", image: img4 },
+  { title: "Cond. Vila do Mar", category: "Concretagem", gradient: "from-black/50 to-[#F2C94C]/25", image: img5 },
 ];
 
 export function Projects() {
@@ -56,7 +61,7 @@ export function Projects() {
       <div>
         <p className="text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Portfolio</p>
         <h2 className="mt-4 font-[family-name:var(--font-bebas)] text-4xl text-white md:text-6xl">
-          PROJETOS QUE FALAM POR SI SÓ
+          CAPTAÇÕES RECENTES
         </h2>
       </div>
 
@@ -67,7 +72,18 @@ export function Projects() {
             className="project-card group relative h-[clamp(240px,50vh,420px)] w-[280px] shrink-0 overflow-hidden rounded-3xl md:w-[380px]"
             data-cursor
           >
-            <div className={`absolute inset-0 bg-gradient-to-br ${p.gradient}`} />
+            {p.image ? (
+              <Image
+                src={p.image}
+                alt={p.title}
+                fill
+                sizes="(min-width: 768px) 380px, 280px"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                priority={false}
+              />
+            ) : (
+              <div className={`absolute inset-0 bg-gradient-to-br ${p.gradient}`} />
+            )}
             <div className="absolute inset-0 bg-[#0A0A0A]/40 transition-colors duration-500 group-hover:bg-[#0A0A0A]/20" />
             <div className="absolute inset-0 flex flex-col justify-end p-8">
               <span className="text-xs tracking-[0.2em] text-[#F2C94C] uppercase">{p.category}</span>
@@ -76,7 +92,6 @@ export function Projects() {
                 Ver estudo de caso →
               </p>
             </div>
-            <div className="absolute inset-0 scale-100 transition-transform duration-700 group-hover:scale-105" />
             <div className="pointer-events-none absolute inset-0 rounded-3xl border border-white/10 transition-colors group-hover:border-[#F2C94C]/50 group-hover:shadow-[0_0_60px_rgba(212,175,55,0.25)]" />
           </article>
         ))}

@@ -43,20 +43,17 @@ export function CTA() {
           Seu negócio merece uma presença digital de outro nível.
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-[#A8A29E]">
-          Conte-nos sobre seu projeto e receba uma proposta personalizada em menos de 24 horas.
+          Como a sua empresa, nós também buscamos fornecer todas as soluções em um só lugar, trazendo praticidade para a sua gestão.
         </p>
         <a
-          href="https://wa.me/34600000000"
+          href="https://wa.me/554788134945"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-primary mt-10 inline-flex text-lg"
           data-cursor
         >
-          Solicitar Orçamento Agora
+          Fazer Orçamento
         </a>
-        <p className="mt-6 text-sm text-[#A8A29E]">
-          Sem compromisso · Resposta em 24h · Clientes em todo o Brasil
-        </p>
       </div>
 
       <div className="pointer-events-none absolute top-20 left-10 h-20 w-20 rounded-full border border-[#F2C94C]/20 opacity-40" />

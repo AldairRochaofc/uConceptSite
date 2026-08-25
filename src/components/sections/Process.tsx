@@ -8,11 +8,31 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const steps = [
-  { num: "01", title: "Estratégia", desc: "Analisamos sua marca, concorrência e objetivos." },
-  { num: "02", title: "Design", desc: "Criamos identidade visual e peças impactantes." },
-  { num: "03", title: "Produção", desc: "Desenvolvemos conteúdo e ativos digitais." },
-  { num: "04", title: "Lançamento", desc: "Publicamos e ativamos sua presença digital." },
-  { num: "05", title: "Otimização", desc: "Medimos, ajustamos e escalamos resultados." },
+  {
+    num: "01",
+    title: "Onboarding Inicial",
+    desc: "Reunião para definição de objetivos e apresentação do plano comercial, levando em conta estrutura comercial atual e equipe.",
+  },
+  {
+    num: "02",
+    title: "CRM",
+    desc: "Definição do sistema de CRM ideal para o cliente, assim seguimos com a configuração e apresentação dele.",
+  },
+  {
+    num: "03",
+    title: "Treinamento Inicial",
+    desc: "Reunião On e Off para treinamentos individuais e em grupo para a equipe (foco nas práticas de uso do CRM e estratégias comerciais).",
+  },
+  {
+    num: "04",
+    title: "SDR",
+    desc: "Início da implementação e treinamento de um SDR com foco em alimentação em massa do CRM implantado.",
+  },
+  {
+    num: "05",
+    title: "Gestão",
+    desc: "Reuniões comerciais semanais e acompanhamento de perto junto com a Gestão Comercial, apresentando resultados, fazendo melhorias do sistema e ajustando estratégias para prospecções.",
+  },
 ];
 
 export function Process() {
@@ -43,9 +63,9 @@ export function Process() {
   return (
     <section id="proceso" ref={sectionRef} className="section-padding relative bg-[#141414]">
       <div className="mx-auto max-w-4xl">
-        <p className="text-center text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Processo</p>
+        <p className="text-center text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Como funciona</p>
         <h2 className="mt-4 text-center font-[family-name:var(--font-bebas)] text-4xl text-white md:text-6xl">
-          COMO TRABALHAMOS
+          INTELIGÊNCIA DE MERCADO
         </h2>
 
         <div className="relative mt-20">

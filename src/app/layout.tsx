@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Bebas_Neue, Inter } from "next/font/google";
 import "./globals.css";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
-import { CustomCursor } from "@/components/ui/CustomCursor";
 import { LoadingScreen } from "@/components/ui/LoadingScreen";
 
 const bebas = Bebas_Neue({
@@ -38,7 +37,6 @@ export default function RootLayout({
     <html lang="pt-BR" className={`${bebas.variable} ${inter.variable}`}>
       <body className="min-h-screen antialiased">
         <LoadingScreen />
-        <CustomCursor />
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>

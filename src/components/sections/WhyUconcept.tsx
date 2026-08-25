@@ -8,13 +8,23 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { value: 120, suffix: "+", label: "projetos" },
+  { value: 30, prefix: "+R$", suffix: "m", label: "geridos" },
   { value: 98, suffix: "%", label: "satisfação" },
-  { value: 24, suffix: "h", label: "resposta" },
-  { value: 100, suffix: "%", label: "resultados reais" },
+  { value: 24, suffix: "h", label: "disponibilidade" },
+  { value: 60, suffix: "", label: "reels p/ mês" },
 ];
 
-function AnimatedStat({ value, suffix, label }: { value: number; suffix: string; label: string }) {
+function AnimatedStat({
+  value,
+  prefix = "",
+  suffix,
+  label,
+}: {
+  value: number;
+  prefix?: string;
+  suffix: string;
+  label: string;
+}) {
   const numRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -32,10 +42,10 @@ function AnimatedStat({ value, suffix, label }: { value: number; suffix: string;
         once: true,
       },
       onUpdate: () => {
-        el.textContent = `${Math.round(obj.val)}${suffix}`;
+        el.textContent = `${prefix}${Math.round(obj.val)}${suffix}`;
       },
     });
-  }, [value, suffix]);
+  }, [value, prefix, suffix]);
 
   return (
     <div className="stat-item glass rounded-2xl p-6 text-center">
@@ -43,7 +53,7 @@ function AnimatedStat({ value, suffix, label }: { value: number; suffix: string;
         ref={numRef}
         className="font-[family-name:var(--font-bebas)] text-5xl text-[#F2C94C] md:text-6xl"
       >
-        0{suffix}
+        {prefix}0{suffix}
       </span>
       <p className="mt-2 text-sm tracking-wider text-[#A8A29E] uppercase">{label}</p>
     </div>
@@ -76,7 +86,8 @@ export function WhyUconcept() {
     { scope: sectionRef }
   );
 
-  const bars = [72, 88, 95, 68];
+  const bars = [67, 98, 95, 82, 54, 48];
+  const areas = ["Brusque", "Camboriú", "Baln. Camboriú", "Itajaí", "Itapema", "Porto Belo"];
 
   return (
     <section id="por-que" ref={sectionRef} className="section-padding relative">
@@ -85,16 +96,16 @@ export function WhyUconcept() {
           <div>
             <p className="text-sm tracking-[0.3em] text-[#F2C94C] uppercase">Por que a Uconcept</p>
             <h2 className="mt-4 font-[family-name:var(--font-bebas)] text-4xl leading-tight text-white md:text-5xl">
-              Sua marca precisa de mais que designs bonitos.
+              Sem Inteligência = Sem Persona
             </h2>
             <p className="mt-6 text-lg text-[#A8A29E]">
-              Criamos presença digital estratégica para gerar impacto, autoridade e vendas.
+              Estratégias personalizadas para cada modelo de negócio, trazemos a nossa experiência em atingir a sua persona de forma impactante pelo canal de comunicação ideal.
             </p>
             <ul className="mt-8 space-y-4">
               {[
-                "Estratégia alinhada com os objetivos do seu negócio",
-                "Design premium que transmite confiança",
-                "Resultados mensuráveis e relatórios claros",
+                "Especialização em planejamento Comercial com Marketing",
+                "Acompanhamento presencial frequente",
+                "Maior velocidade na adaptação das estratégias",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-[#F8F7F2]">
                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#D4AF37]/30 text-xs text-[#F2C94C]">
@@ -108,9 +119,9 @@ export function WhyUconcept() {
 
           <div className="dashboard-panel glass rounded-3xl p-8 glow-gold">
             <p className="mb-6 text-xs tracking-[0.2em] text-[#A8A29E] uppercase">
-              Painel de desempenho
+              Áreas atendidas (presencialmente)
             </p>
-            {["Alcance", "Engagement", "Conversões", "Retenção"].map((label, i) => (
+            {areas.map((label, i) => (
               <div key={label} className="mb-5">
                 <div className="mb-2 flex justify-between text-sm">
                   <span className="text-[#A8A29E]">{label}</span>
