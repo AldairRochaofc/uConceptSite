@@ -10,22 +10,40 @@ gsap.registerPlugin(ScrollTrigger);
 
 const testimonials = [
   {
-    name: "Carlos Mendoza",
-    role: "Dono, Restaurante La Brasa",
-    text: "A Uconcept transformou nossa presença digital. Em três meses duplicamos as reservas pelo Instagram.",
-    initials: "CM",
+    name: "Ryan Matos",
+    role: "Avaliação no Google",
+    text: "Excelente empresa! Atendimento muito profissional, serviço de alta qualidade e entrega dentro do prazo. Dá pra ver que trabalham com responsabilidade e atenção aos detalhes. Recomendo demais!",
+    initials: "RM",
   },
   {
-    name: "Elena Ruiz",
-    role: "Coach de vida",
-    text: "Profissionalismo absoluto. Minha marca pessoal agora transmite exatamente a autoridade que eu buscava.",
-    initials: "ER",
+    name: "Energy Flow",
+    role: "Avaliação no Google",
+    text: "Excelente trabalho da agência, desde o primeiro contato até a entrega final. Estratégia bem alinhada, execução profissional e total transparência em cada etapa. Comunicação clara, agilidade e um suporte que realmente faz diferença. Sem dúvida, uma parceria que agrega muito valor ao nosso negócio. Recomendo.",
+    initials: "EF",
   },
   {
-    name: "Pastor David G.",
-    role: "Igreja Vida Nova",
-    text: "A equipe entendeu nossa visão e a expressou com elegância. Comunicação impecável em todos os momentos.",
-    initials: "DG",
+    name: "Julio Oliveira",
+    role: "Avaliação no Google",
+    text: "Ótima experiência e atenção com o cliente desde o início, relacionamento com cliente nota 10.",
+    initials: "JO",
+  },
+  {
+    name: "CBR John Dillinger",
+    role: "Local Guide · Google",
+    text: "Ótimo serviço de gestão de redes sociais e atendimento no WhatsApp com muita atenção.",
+    initials: "JD",
+  },
+  {
+    name: "Black Snail",
+    role: "Avaliação no Google",
+    text: "Muito prestativo e serviço excelente, recomendo!",
+    initials: "BS",
+  },
+  {
+    name: "Willian Silva",
+    role: "Avaliação no Google",
+    text: "Ótimo atendimento, atendeu todas as minhas expectativas, profissional qualificado na área de marketing.",
+    initials: "WS",
   },
 ];
 
@@ -62,6 +80,17 @@ export function Testimonials() {
         <h2 className="mt-4 font-[family-name:var(--font-bebas)] text-4xl text-white md:text-5xl">
           O QUE DIZEM NOSSOS CLIENTES
         </h2>
+
+        <a
+          href="https://share.google/y8MrAU2N5UY9ByPLP"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 text-sm text-[#A8A29E] transition-colors hover:text-[#F2C94C]"
+          data-cursor
+        >
+          <span className="text-[#F2C94C]">★★★★★</span>
+          5,0 · 14 avaliações no Google
+        </a>
 
         <div className="relative mt-16 min-h-[280px]">
           <AnimatePresence mode="wait">

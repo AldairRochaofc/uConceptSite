@@ -21,8 +21,8 @@ export function Footer() {
           </p>
           <p className="mt-2 text-sm text-[#A8A29E]">Agência de Marketing</p>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-[#A8A29E]">
-            Agência de marketing digital premium no Brasil. Estratégia, design e tecnologia para
-            marcas que querem se destacar.
+            Agência de marketing digital premium no Brasil. Estratégia, design e
+            tecnologia para marcas que querem se destacar.
           </p>
         </div>
 
@@ -31,7 +31,10 @@ export function Footer() {
           <ul className="mt-4 space-y-2">
             {quickLinks.map((l) => (
               <li key={l.href}>
-                <a href={l.href} className="text-sm text-[#A8A29E] transition-colors hover:text-[#F2C94C]">
+                <a
+                  href={l.href}
+                  className="text-sm text-[#A8A29E] transition-colors hover:text-[#F2C94C]"
+                >
                   {l.label}
                 </a>
               </li>
@@ -43,12 +46,18 @@ export function Footer() {
           <p className="text-sm font-semibold text-white">Contato</p>
           <ul className="mt-4 space-y-3 text-sm text-[#A8A29E]">
             <li>
-              <a href="mailto:uconceptbr@gmail.com" className="hover:text-[#F2C94C]">
+              <a
+                href="mailto:uconceptbr@gmail.com"
+                className="hover:text-[#F2C94C]"
+              >
                 uconceptbr@gmail.com
               </a>
             </li>
             <li>
-              <a href="https://wa.me/554788134945" className="hover:text-[#F2C94C]">
+              <a
+                href="https://wa.me/554788134945"
+                className="hover:text-[#F2C94C]"
+              >
                 WhatsApp
               </a>
             </li>
@@ -71,7 +80,8 @@ export function Footer() {
       </div>
 
       <p className="mx-auto mt-12 max-w-7xl border-t border-white/5 pt-8 text-center text-xs text-[#A8A29E]">
-        © {new Date().getFullYear()} Uconcept Marketing Digital. Todos os direitos reservados.
+        © {new Date().getFullYear()} Uconcept Marketing Digital. Todos os
+        direitos reservados.
       </p>
     </footer>
   );

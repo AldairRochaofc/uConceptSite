@@ -69,7 +69,7 @@ export function Process() {
         </h2>
 
         <div className="relative mt-20">
-          <div className="process-line absolute top-0 left-[27px] h-full w-[2px] bg-gradient-to-b from-[#D4AF37] via-[#F2C94C] to-transparent md:left-1/2 md:-translate-x-px" />
+          <div className="process-line absolute top-0 left-[27px] h-full w-px bg-gradient-to-b from-[#D4AF37]/25 via-[#F2C94C]/25 to-transparent md:left-1/2 md:-translate-x-px" />
 
           {steps.map((step, i) => (
             <div

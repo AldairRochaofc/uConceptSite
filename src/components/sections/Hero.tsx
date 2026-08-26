@@ -17,12 +17,12 @@ export function Hero() {
   useGSAP(
     () => {
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-      tl.from(".hero-logo", { opacity: 0, y: 30, duration: 1 })
-        .from(
-          ".hero-headline .line",
-          { opacity: 0, y: 80, duration: 1.1, stagger: 0.12 },
-          "-=0.5",
-        )
+      tl.from(".hero-headline .line", {
+        opacity: 0,
+        y: 80,
+        duration: 1.1,
+        stagger: 0.12,
+      })
         .from(".hero-sub", { opacity: 0, y: 40, duration: 0.9 }, "-=0.6")
         .from(
           ".hero-cta",
@@ -64,21 +64,18 @@ export function Hero() {
       <div className="hero-glow pointer-events-none absolute top-1/4 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-[#D4AF37]/20 blur-[120px] opacity-40" />
 
       <div className="relative z-10 mx-auto max-w-6xl text-center">
-        <p className="hero-logo mb-6 inline-flex items-center gap-2 rounded-full border border-[#F2C94C]/30 bg-white/5 px-5 py-2 text-xs tracking-[0.25em] text-[#F2C94C] uppercase backdrop-blur-md">
-          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#F2C94C]" />
-          Marketing Digital Premium
-        </p>
-
         <h1 className="hero-headline font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,8vw,5.5rem)] leading-[0.95] tracking-wide text-white">
-          <span className="line block glow-text">MARKETING DIGITAL</span>
+          <span className="line block glow-text">
+            MARKETING & INTELIGÊNCIA DE MERCADO
+          </span>
           <span className="line block bg-gradient-to-r from-white via-[#F8F7F2] to-[#F2C94C] bg-clip-text text-transparent">
-            QUE FAZ SUA MARCA CRESCER
+            EM UM SÓ LUGAR
           </span>
         </h1>
 
         <p className="hero-sub mx-auto mt-6 max-w-2xl text-lg text-[#A8A29E] md:text-xl">
-          Design, estratégia e tecnologia para negócios que querem se destacar
-          de verdade.
+          Do conceito à execução ágil, marketing e inteligência com a
+          metodologia scrum na prática
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

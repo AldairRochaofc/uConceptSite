@@ -8,10 +8,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { value: 30, prefix: "+R$", suffix: "m", label: "geridos" },
-  { value: 98, suffix: "%", label: "satisfação" },
+  { value: 3, prefix: "+", suffix: "k", label: "em economia gerados p/ mês" },
+  { value: 100, suffix: "%", label: "satisfação" },
   { value: 24, suffix: "h", label: "disponibilidade" },
-  { value: 60, suffix: "", label: "reels p/ mês" },
+  { value: 60, prefix: "+", suffix: "", label: "reels p/ mês" },
 ];
 
 function AnimatedStat({
